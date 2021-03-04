@@ -66,10 +66,10 @@
                               <TextField fx:id="hourBox" layoutX="325.0" layoutY="86.0" prefHeight="25.0" prefWidth="58.0" />
                               <HBox alignment="CENTER" layoutY="144.0" prefHeight="35.0" prefWidth="600.0" spacing="15.0">
                                  <children>
-                                    <Button fx:id="addBtn" mnemonicParsing="false" onAction="#dataTest" prefWidth="125.0" text="Add" />
-                                    <Button fx:id="removeBtn" mnemonicParsing="false" prefWidth="125.0" text="Remove" />
+                                    <Button fx:id="addBtn" mnemonicParsing="false" onAction="#add" prefWidth="125.0" text="Add" />
+                                    <Button fx:id="removeBtn" mnemonicParsing="false" onAction="#remove" prefWidth="125.0" text="Remove" />
                                     <Button fx:id="hourBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Change Hours" />
-                                    <Button fx:id="clearBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Clear" />
+                                    <Button fx:id="clearBtn" mnemonicParsing="false" prefHeight="25.0" onAction="#clear" prefWidth="125.0" text="Clear" />
                                  </children>
                               </HBox>
                               <Line endX="499.0" layoutX="101.0" layoutY="247.0" startX="-100.0" />
