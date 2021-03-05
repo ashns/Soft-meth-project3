@@ -1,5 +1,6 @@
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
@@ -18,7 +19,7 @@ public class Controller {
     @FXML
     ToggleGroup Dept = new ToggleGroup();
     @FXML
-    TextField dateBox = new TextField();
+    DatePicker dateBox = new DatePicker();
     @FXML
     ToggleGroup Position = new ToggleGroup();
     @FXML
@@ -69,7 +70,7 @@ public class Controller {
     public void add(ActionEvent actionEvent){
         String name = nameBox.getText();
         String department = Dept.getSelectedToggle().toString();
-        Date hireDate = new Date(dateBox.getText());
+        Date hireDate = new Date(dateBox.getValue().toString());
         Float rate = (float)Integer.parseInt(payBox.getText());
         Profile hireProfile = new Profile(name, department, hireDate);
         if(Position.getSelectedToggle().toString()=="PTRB"){
